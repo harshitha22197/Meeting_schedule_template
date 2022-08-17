@@ -1,0 +1,633 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f4;
+}
+.container{
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+.container.active .forms{
+    height: 365px;
+}
+.container .form .title{
+    position: absolute;
+    font-size: 20px;
+    margin: 20px 0px 0px -18px;
+    font-weight: 500;
+}
+
+.container .form .title1{
+  position: absolute;
+  font-size: 20px;
+  margin: -40px 0px 0px -18px;
+  font-weight: 500;
+}
+
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 157px;
+    background-color: #3b6bef;
+    border-radius: 25px;
+}
+
+.form .title1::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100px;
+  background-color: #3b6bef;
+  border-radius: 25px;
+}
+
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 69%;
+}
+
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+.input-field i.icon{
+    left: 0;
+}
+
+
+.image1{
+  height: 99px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 16px 0px 0px 105px;
+  background: #26699b;
+  }
+
+  img{
+    border-radius: 56%;
+    width: 69px;
+    height: 67px;
+    margin: 12px 0px 0px 11px;
+  }
+
+
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.form .btn-text{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-text .checkbox-content{
+    align-items: center;
+}
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+}
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form .button1 input{
+    border: none;
+    color: #333;
+    font-size: 12px;
+    padding: 0px 0px 0px 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 79px;
+    height: 30px;
+    border-radius: 6px;
+    margin: 145px 0px 0px 28px;
+    background-color: #f2f4f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form .button2 input{
+    border: none;
+    color: #333;
+    font-size: 12px;
+    padding: 0px 0px 0px 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 79px;
+    height: 30px;
+    border-radius: 6px;
+    margin: 135px 0px 0px 28px;
+    background-color: #f2f4f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form .button3 input{
+    border: none;
+    color: #333;
+    font-size: 12px;
+    padding: 0px 0px 0px 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 79px;
+    height: 30px;
+    margin: 125px 0px 0px 28px;
+    border-radius: 6px;
+    background-color: #f2f4f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+.form .button4 input{
+    border: none;
+    color: #333;
+    font-size: 12px;
+    padding: 0px 0px 0px 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 79px;
+    height: 30px;
+    border-radius: 6px;
+    margin: -5px 0px 0px 0px;
+    background-color: #f2f4f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form .button5 input{
+    border: none;
+    color: #333;
+    font-size: 12px;
+    padding: 0px 0px 0px 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 79px;
+    height: 30px;
+    border-radius: 6px;
+    margin: -15px 0px 0px 0px;
+    background-color: #f2f4f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form .button6 input{
+    border: none;
+    color: #333;
+    font-size: 12px;
+    padding: 0px 0px 0px 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 79px;
+    height: 30px;
+    margin: -25px 0px 0px 0px;
+    border-radius: 6px;
+    background-color: #f2f4f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.active .button1 input:hover{
+  background-color: #265df2;
+  color:#fff
+
+}
+
+.active .input-field.button1:hover{
+  background-color: #265df2;
+  color:#fff
+}
+
+.button1 input:hover{
+  background-color: #265df2;
+  color:#fff
+}
+
+
+.button2 input:hover{
+  background-color: #265df2;
+  color:#fff
+}
+.button3 input:hover{
+  background-color: #265df2;
+  color:#fff
+}
+.button4 input:hover{
+  background-color: #265df2;
+  color:#fff
+}
+.button5 input:hover{
+  background-color: #265df2;
+  color:#fff
+}
+.button6 input:hover{
+    background-color: #265df2;
+    color:#fff
+}
+
+.form .login-signup{
+    margin-top: -21px;
+    text-align: center;
+}
+
+.input-field.button4{
+  margin: -20px 0px 0px 188px;
+}
+
+.input-field.button5{
+  margin: 0px 0px 0px 188px;
+}
+
+.input-field.button6{
+  margin: 0px 0px 0px 188px;
+}
+
+
+
+
+.css-btn{
+  background-color:#265df2 !important;
+  color: white !important;
+}
+
+
+div#round{
+  position: relative;
+  margin: 90px 0px -118px 0px;
+}
+
+
+div#nextrou{
+  position: relative;
+  margin: 78px 0px -119px 270px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #3b6bef;
+  color: white;
+}
+
+
+.next {
+  background-color: #3b6bef;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+
+
+
+  .drift-meeting-day-picker--slot-next {
+    text-align: right;
+  }
+  .drift-meeting-day-picker--slot-prev {
+    text-align: left;
+  }
+  .drift-meeting-scheduler.drift-widget-card {
+    margin-top: 16px;
+    float: left;
+    min-height: 350px;
+  }
+  .drift-meeting-scheduler.drift-meeting-scheduler--loader {
+    float: none;
+    min-height: 350px;
+  }
+  .drift-widget-message-sender--AGENT .drift-meeting-scheduler.drift-widget-card {
+    min-height: 420px;
+  }
+  .drift-widget-message-sender--END_USER .drift-meeting-scheduler {
+    float: right;
+    margin-right: 0;
+  }
+  .drift-meeting-scheduler > span {
+    font-size: 14px;
+    color: #333;
+  }
+  .drift-meeting-scheduler--header {
+    float: left;
+  }
+  .drift-meeting-scheduler--header .drift-widget-card-header--content {
+    float: left;
+    width: 100%;
+  }
+  .drift-meeting-scheduler--header span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .drift-meeting-scheduler--header span:first-child {
+    float: left;
+  }
+  .drift-meeting-scheduler--header span:nth-child(2) {
+    float: right;
+  }
+  .drift-meeting-scheduler--header span svg path {
+    fill: currentColor;
+  }
+  .drift-meeting-scheduler--header span .drift-default-icon--calendar-check {
+    margin: -3px 4px 0 0;
+    vertical-align: middle;
+  }
+  .drift-meeting-scheduler--content {
+    clear: both;
+    padding: 16px 0;
+    text-align: center;
+  }
+  .drift-meeting-scheduler--meeting-info-timezone {
+    padding: 5px 0 15px;
+  }
+  .drift-meeting-scheduler--meeting-info-timezone span {
+    font-size: 12px;
+  }
+  .drift-meeting-day-picker--timezone button {
+    padding: 0;
+    width: auto;
+  }
+  .drift-meeting-day-picker--timezone button:hover {
+    text-decoration: underline;
+  }
+  .drift-meeting-scheduler--meeting-info-timezone span:first-child {
+    text-transform: uppercase;
+    float: left;
+  }
+  .drift-meeting-scheduler--meeting-info-timezone span:last-child {
+    float: right;
+  }
+  .drift-meeting-day-picker,
+  .drift-meeting-time-picker {
+    position: absolute;
+    height: 232px;
+    margin: 25px 0px 0px 0px;
+  }
+  .drift-meeting-recipients {
+    text-align: center;
+  }
+  .drift-meeting-recipient-name {
+    color: #687882;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .drift-meeting-day-picker--timezone {
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 24px 0 8px;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .drift-meeting-day-picker--label {
+    color: #414141;
+    margin: 0px -29px 0px 0px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .drift-meeting-day-picker--selected-tz {
+    color: #687882;
+    display: block;
+    font-size: 12px;
+    margin: 1px 0px 1px 25px;
+  }
+  .drift-meeting-day-picker--list-item {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid #eff3f5;
+    cursor: pointer;
+  }
+  .drift-meeting-day-picker--list-item:last-child {
+    border-bottom: 1px solid #eff3f5;
+  }
+  .drift-meeting-day-picker--list-item:hover {
+    border: 1px solid;
+  }
+  .drift-meeting-day-picker--slots {
+    min-height: 128px;
+    padding: 0;
+    text-align: left;
+  }
+  .drift-meeting-day-picker--list-item span {
+    color: #414141;
+    margin-right: 8px;
+  }
+  .drift-meeting-day-picker .drift-meeting-day-picker--list-item span {
+    font-size: 14px;
+  }
+  .drift-meeting-time-picker--header {
+    text-align: center;
+    position: relative;
+    margin: 0px 60px  5px 0px;
+  }
+  .drift-meeting-time-picker--header-day {
+    font-size: 16px;
+    margin: 0px 0px 0px 90px;
+    color: #414141;
+  }
+  .drift-meeting-time-picker--header-reminder {
+    display: block;
+    font-size: 12px;
+    color: #687882;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .drift-meeting-time-picker--timeslots {
+    padding: 0;
+  }
+  .drift-meeting-day-picker--slots__stacked li,
+  .drift-meeting-time-picker--slot {
+    border: 1px solid #eff3f5;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .drift-meeting-time-picker--slot span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #414141;
+    text-transform: uppercase;
+  }
+  .drift-meeting-time-picker--header span {
+    text-align: center;
+  }
+  .drift-meeting-time-picker--subheader {
+    padding: 0 15px 8px;
+    font-size: 14px;
+    min-height: 25px;
+  }
+  .drift-meeting-time-picker--subheader span:first-child {
+    float: left;
+  }
+  .drift-meeting-time-picker--subheader span:last-child {
+    float: right;
+  }
+  .drift-meeting-card-body {
+    text-align: center;
+    position: relative;
+    min-height: 120px;
+    padding: 0 16px;
+  }
+  .drift-meeting-card-body .loading-state--loader-balls {
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+  .drift-meeting-confirmation {
+    margin: 16px 0px 40px 80px;
+  }
+  .drift-meeting-confirmation > span {
+    position: relative;
+    display: block;
+    margin: 4px 0;
+    line-height: 20px;
+  }
+  .drift-meeting-confirmation--time {
+    text-transform: uppercase;
+    color: #414141;
+  }
+  .drift-meeting-confirmation--date,
+  .drift-meeting-confirmation--time,
+  .drift-meeting-confirmation--timezone {
+    font-size: 14px;
+  }
+  .drift-meeting-confirmation--timezone {
+    color: #687882;
+  }
+ 
+  .hide-book{
+    display: none;
+  }
+
+  .show-book{
+    display: block;
+  }
+
+
+  
